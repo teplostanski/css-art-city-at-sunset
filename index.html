@@ -81,6 +81,7 @@
           content: '';
           background: #455887;
           box-shadow: var(--size) 0 #455887;
+          
         }
       }
 
@@ -93,6 +94,9 @@
           content: '';
           background: #2b7199;
           box-shadow: var(--size) 0 #2b7199;
+          will-change: transform; /* или auto */
+    transform: translateZ(0); /* hack для создания слоя */
+
         }
       }
 
