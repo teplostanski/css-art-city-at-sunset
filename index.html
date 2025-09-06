@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>css-art-city-at-sunset</title>
     <style>
       :root {
-        --size: 20px;
+        --size: 10px;
       }
 
       *,
@@ -33,14 +34,14 @@
         height: fit-content;
         display: flex;
         flex-direction: column;
-        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+        /*box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);*/
         border-radius: 0 0 4px 4px;
       }
 
       .list {
         list-style: none;
         padding: 0;
-        margin: 14px;
+        margin: 14px 0;
         text-align: end;
       }
 
@@ -77,26 +78,22 @@
         background: #2b7199;
         box-shadow: var(--size) 0 #2b7199;
       }
-        #cell-0::before {
-          content: '';
-          background: #455887;
-          box-shadow: var(--size) 0 #455887;
-        }
-      
+      #cell-0::before {
+        content: '';
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
+      }
 
       #cell-1,
       #cell-44 {
         background: #2b7199;
         box-shadow: var(--size) 0 #2b7199;
-
-        &::before {
-          content: '';
-          background: #2b7199;
-          box-shadow: var(--size) 0 #2b7199;
-          will-change: transform; /* или auto */
-    transform: translateZ(0); /* hack для создания слоя */
-
-        }
+      }
+      #cell-1::before,
+      #cell-44::before {
+        content: '';
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
       }
 
       #cell-2,
@@ -107,57 +104,58 @@
       #cell-43 {
         background: #2b7199;
         box-shadow: var(--size) 0 #2b7199;
-
-        &::before {
-          content: '';
-          background: #4b88aa;
-          box-shadow: var(--size) 0 #4b88aa;
-        }
+      }
+      #cell-2::before,
+      #cell-4::before,
+      #cell-5::before,
+      #cell-8::before,
+      #cell-17::before,
+      #cell-43::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
       }
 
       #cell-3,
       #cell-16 {
         background: #4b88aa;
         box-shadow: var(--size) 0 #4b88aa;
-
-        &::before {
-          content: '';
-          background: #4b88aa;
-          box-shadow: var(--size) 0 #4b88aa;
-        }
+      }
+      #cell-3::before,
+      #cell-16::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
       }
 
       #cell-6 {
         background: #2b7199;
         box-shadow: var(--size) 0 #4b88aa;
-
-        &::before {
-          content: '';
-          background: #4b88aa;
-          box-shadow: var(--size) 0 #4b88aa;
-        }
+      }
+      #cell-6::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
       }
 
       #cell-7 {
         background: #4b88aa;
         box-shadow: var(--size) 0 #2b7199;
-
-        &::before {
-          content: '';
-          background: #4b88aa;
-          box-shadow: var(--size) 0 #4b88aa;
-        }
+      }
+      #cell-7::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
       }
 
       #cell-9 {
         background: #455887;
         box-shadow: var(--size) 0 #455887;
-
-        &::before {
-          content: '';
-          background: #4b88aa;
-          box-shadow: var(--size) 0 #4b88aa;
-        }
+      }
+      #cell-9::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
       }
 
       #cell-10,
@@ -166,36 +164,38 @@
       #cell-27 {
         background: #455887;
         box-shadow: var(--size) 0 #455887;
-
-        &::before {
-          content: '';
-          background: #2b7199;
-          box-shadow: var(--size) 0 #2b7199;
-        }
+      }
+      #cell-10::before,
+      #cell-11::before,
+      #cell-12::before,
+      #cell-27::before {
+        content: '';
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
       }
 
       #cell-13,
       #cell-28 {
         background: #455887;
         box-shadow: var(--size) 0 #455887;
-
-        &::before {
-          content: '';
-          background: #2b7199;
-          box-shadow: var(--size) 0 #455887;
-        }
+      }
+      #cell-13::before,
+      #cell-28::before {
+        content: '';
+        background: #2b7199;
+        box-shadow: var(--size) 0 #455887;
       }
 
       #cell-14,
       #cell-29 {
         background: #455887;
         box-shadow: var(--size) 0 #455887;
-
-        &::before {
-          content: '';
-          background: #455887;
-          box-shadow: var(--size) 0 #455887;
-        }
+      }
+      #cell-14::before,
+      #cell-29::before {
+        content: '';
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
       }
 
       /* row 2 */
@@ -203,12 +203,11 @@
       #cell-15 {
         background: #2b7199;
         box-shadow: var(--size) 0 #2b7199;
-
-        &::before {
-          content: '';
-          background: #2b7199;
-          box-shadow: var(--size) 0 #4b88aa;
-        }
+      }
+      #cell-15::before {
+        content: '';
+        background: #2b7199;
+        box-shadow: var(--size) 0 #4b88aa;
       }
 
       #cell-18,
@@ -1540,11 +1539,22 @@
       #cell-218 {
         background: #4b1111;
         box-shadow: var(--size) 0 #261515;
+      }
+      #cell-218::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
 
-        &::before {
-          content: '';
-          background: #261515;
-          box-shadow: var(--size) 0 #261515;
+      @media screen and (min-width: 600px) {
+        :root {
+          --size: 15px;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        :root {
+          --size: 20px;
         }
       }
     </style>
