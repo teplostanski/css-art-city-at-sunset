@@ -6,7 +6,7 @@
     <title>css-art-city-at-sunset</title>
     <style>
       :root {
-        --size: 10px;
+        --size: 8px;
       }
 
       *,
@@ -17,8 +17,8 @@
 
       body {
         display: flex;
-        height: 100vh;
-        font-size: 10px;
+        height: 100dvh;
+        font-size: 12px;
         color: #455887;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.4em;
@@ -34,7 +34,6 @@
         height: fit-content;
         display: flex;
         flex-direction: column;
-        /*box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);*/
         border-radius: 0 0 4px 4px;
       }
 
@@ -1546,23 +1545,35 @@
         box-shadow: var(--size) 0 #261515;
       }
 
-      @media screen and (min-width: 600px) {
+      @media screen and (min-width: 425px) {
         :root {
-          --size: 15px;
-        }
-
-        body {
-          font-size: 12px
+          --size: 10px;
         }
       }
 
-      @media screen and (min-width: 900px) {
+      @media screen and (min-width: 768px) {
         :root {
-          --size: 20px;
+          --size: 16px;
         }
 
         body {
-          font-size: 14px
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        :root {
+          --size: 18px;
+        }
+      }
+      
+            @media screen and (min-width: 2560px) {
+        :root {
+          --size: 22px;
+        }
+
+        body {
+          font-size: 18px;
         }
       }
     </style>
