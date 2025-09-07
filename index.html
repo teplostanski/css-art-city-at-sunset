@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<!--
+      кря!      
+     /          
+  >(.)__,       
+   (___/  t10i  
+~~~~~~~~~~~~~~~~~
+original by ABs <https://dotpict.net/users/3003>
+created by teplostanski <https://teplostan.ski>
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Pixel Art On Pure CSS • City At Sunset • Igor Teplostanski • teplostan.ski
+    </title>
+    <style>
+      :root {
+        --size: 8px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        min-height: 100dvh;
+        font-size: 12px;
+        color: #455887;
+        background: #fcfcfc;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 4px 4px;
+      }
+
+      .list {
+        list-style: none;
+        padding: 0;
+        margin: 14px 0;
+        text-align: end;
+      }
+
+      .link {
+        color: inherit;
+        text-underline-offset: 3px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(15, calc(var(--size) * 2));
+        grid-template-rows: repeat(15, calc(var(--size) * 2));
+      }
+
+      .cell {
+        width: var(--size);
+        height: var(--size);
+        position: relative;
+      }
+      .cell::before {
+        content: '';
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        top: var(--size);
+        left: 0;
+      }
+
+      /* row 1 */
+
+      #cell-0 {
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+      #cell-0::before {
+        content: '';
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
+      }
+
+      #cell-1,
+      #cell-44 {
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+      #cell-1::before,
+      #cell-44::before {
+        content: '';
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+
+      #cell-2,
+      #cell-4,
+      #cell-5,
+      #cell-8,
+      #cell-17,
+      #cell-43 {
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+      #cell-2::before,
+      #cell-4::before,
+      #cell-5::before,
+      #cell-8::before,
+      #cell-17::before,
+      #cell-43::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      #cell-3,
+      #cell-16 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-3::before,
+      #cell-16::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      #cell-6 {
+        background: #2b7199;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-6::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      #cell-7 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+      #cell-7::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      #cell-9 {
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
+      }
+      #cell-9::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      #cell-10,
+      #cell-11,
+      #cell-12,
+      #cell-27 {
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
+      }
+      #cell-10::before,
+      #cell-11::before,
+      #cell-12::before,
+      #cell-27::before {
+        content: '';
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+
+      #cell-13,
+      #cell-28 {
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
+      }
+      #cell-13::before,
+      #cell-28::before {
+        content: '';
+        background: #2b7199;
+        box-shadow: var(--size) 0 #455887;
+      }
+
+      #cell-14,
+      #cell-29 {
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
+      }
+      #cell-14::before,
+      #cell-29::before {
+        content: '';
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
+      }
+
+      /* row 2 */
+
+      #cell-15 {
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+      #cell-15::before {
+        content: '';
+        background: #2b7199;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      #cell-18,
+      #cell-31 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-18::before,
+      #cell-31::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      #cell-19,
+      #cell-32,
+      #cell-58 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-19::before,
+      #cell-32::before,
+      #cell-58::before {
+        content: '';
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+
+      #cell-20 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-20::before {
+        content: '';
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+
+      #cell-21 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-21::before {
+        content: '';
+        background: #a39228;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-22 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-22::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-23 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-23::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-24 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-24::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-25 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-25::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-26,
+      #cell-41 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+      #cell-26::before,
+      #cell-41::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-27 {
+        background: #455887;
+        box-shadow: var(--size) 0 #455887;
+      }
+      #cell-27::before {
+        content: '';
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      /* row 3 */
+
+      #cell-30 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-30::before {
+        content: '';
+        background: #a39228;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+
+      #cell-33 {
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+      #cell-33::before {
+        content: '';
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+
+      #cell-34 {
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+      #cell-34::before {
+        content: '';
+        background: #a39228;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-35 {
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+      #cell-35::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-36 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-36::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-37 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+      #cell-37::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a39228;
+      }
+
+      #cell-38 {
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+      #cell-38::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-39 {
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-39::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-40,
+      #cell-46 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-40::before,
+      #cell-46::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-42 {
+        background: #2b7199;
+        box-shadow: var(--size) 0 #2b7199;
+      }
+      #cell-42::before {
+        content: '';
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+
+      /* row 4 */
+
+      #cell-45 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-45::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-47 {
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+      #cell-47::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-48 {
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-48::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-49 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-49::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-50,
+      #cell-122 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-50::before,
+      #cell-122::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-51 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+      #cell-51::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-52 {
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-52::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-53 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-53::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-54,
+      #cell-104 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-54::before,
+      #cell-104::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-55 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+      #cell-55::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-56 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-56::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-57 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+
+        #cell-57::before {
+          content: '';
+          background: #a5ab88;
+          box-shadow: var(--size) 0 #a39228;
+        }
+      }
+      #cell-57::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a39228;
+      }
+
+      #cell-59 {
+        background: #4b88aa;
+        box-shadow: var(--size) 0 #4b88aa;
+      }
+      #cell-59::before {
+        content: '';
+        background: #a39228;
+        box-shadow: var(--size) 0 #a39228;
+      }
+
+      /* row 5 */
+
+      #cell-60,
+      #cell-61,
+      #cell-109,
+      #cell-112,
+      #cell-113 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-60::before,
+      #cell-61::before,
+      #cell-109::before,
+      #cell-112::before,
+      #cell-113::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-62,
+      #cell-111 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-62::before,
+      #cell-111::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-63 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-63::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-64 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-64::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-65 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+      #cell-65::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffffc3;
+      }
+
+      #cell-66 {
+        background: #ffffc3;
+        box-shadow: var(--size) 0 #ffffc3;
+      }
+      #cell-66::before {
+        content: '';
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+
+      #cell-67,
+      #cell-82 {
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+      #cell-67::before,
+      #cell-82::before {
+        content: '';
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+
+      #cell-68 {
+        background: #ffffc3;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+      #cell-68::before {
+        content: '';
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+
+      #cell-69 {
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-69::before {
+        content: '';
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+
+      #cell-70 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-70::before {
+        content: '';
+        background: #ffffc3;
+        box-shadow: var(--size) 0 #ffffc3;
+      }
+
+      #cell-71 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-71::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-72 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-72::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-73 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #a39228;
+      }
+      #cell-73::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      #cell-74 {
+        background: #a39228;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+      #cell-74::before {
+        content: '';
+        background: #a5ab88;
+        box-shadow: var(--size) 0 #a5ab88;
+      }
+
+      /* row 6 */
+
+      #cell-75 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-75::before {
+        content: '';
+        background: #801111;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-76 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-76::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-77 {
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+      #cell-77::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-78 {
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffffc3;
+      }
+      #cell-78::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-79 {
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+      #cell-79::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-80 {
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+      #cell-80::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffffc3;
+      }
+
+      #cell-81 {
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+      #cell-81::before {
+        content: '';
+        background: #ffffc3;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+
+      #cell-83 {
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffff;
+      }
+      #cell-83::before {
+        content: '';
+        background: #ffffff;
+        box-shadow: var(--size) 0 #ffffc3;
+      }
+
+      #cell-84 {
+        background: #ffffc3;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+      #cell-84::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-85 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-85::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-86 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-86::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-87 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-87::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-88 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-88::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-89 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-89::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      /* row 7 */
+
+      #cell-90 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-90::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-91,
+      #cell-117 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-91::before,
+      #cell-117::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-92 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-92::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-93,
+      #cell-102,
+      #cell-105,
+      #cell-118,
+      #cell-119,
+      #cell-132,
+      #cell-133,
+      #cell-134,
+      #cell-136,
+      #cell-137,
+      #cell-143 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-93::before,
+      #cell-102::before,
+      #cell-105::before,
+      #cell-118::before,
+      #cell-119::before,
+      #cell-132::before,
+      #cell-133::before,
+      #cell-134::before,
+      #cell-136::before,
+      #cell-137::before,
+      #cell-143::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-94 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-94::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-95 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-95::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-96 {
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+      #cell-96::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-97 {
+        background: #ffffc3;
+        box-shadow: var(--size) 0 #ffffc3;
+      }
+      #cell-97::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-98 {
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-98::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-99 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-99::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-100 {
+        background: #4b1111;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-100::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+
+      #cell-101,
+      #cell-120 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-101::before,
+      #cell-120::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-103 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-103::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      /* row 8 */
+
+      #cell-106,
+      #cell-138 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-106::before,
+      #cell-138::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-107 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-107::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-108 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-108::before {
+        content: '';
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-110 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-110::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-114 {
+        background: #4b1111;
+        box-shadow: var(--size) 0 #261515;
+      }
+      #cell-114::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-115,
+      #cell-129,
+      #cell-130,
+      #cell-144,
+      #cell-145,
+      #cell-154,
+      #cell-156,
+      #cell-159,
+      #cell-160,
+      #cell-161,
+      #cell-162,
+      #cell-163,
+      #cell-164,
+      #cell-169,
+      #cell-170,
+      #cell-171,
+      #cell-174,
+      #cell-175,
+      #cell-176,
+      #cell-177,
+      #cell-178,
+      #cell-179,
+      #cell-180,
+      #cell-183,
+      #cell-184,
+      #cell-185,
+      #cell-186,
+      #cell-187,
+      #cell-189,
+      #cell-190,
+      #cell-191,
+      #cell-192,
+      #cell-193,
+      #cell-194,
+      #cell-195,
+      #cell-196,
+      #cell-197,
+      #cell-198,
+      #cell-199,
+      #cell-200,
+      #cell-201,
+      #cell-202,
+      #cell-204,
+      #cell-205,
+      #cell-206,
+      #cell-207,
+      #cell-208,
+      #cell-209,
+      #cell-210,
+      #cell-211,
+      #cell-212,
+      #cell-213,
+      #cell-214,
+      #cell-215,
+      #cell-216,
+      #cell-217,
+      #cell-219,
+      #cell-220,
+      #cell-221,
+      #cell-222,
+      #cell-223,
+      #cell-224 {
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+      #cell-115::before,
+      #cell-129::before,
+      #cell-130::before,
+      #cell-144::before,
+      #cell-145::before,
+      #cell-154::before,
+      #cell-156::before,
+      #cell-159::before,
+      #cell-160::before,
+      #cell-161::before,
+      #cell-162::before,
+      #cell-163::before,
+      #cell-164::before,
+      #cell-169::before,
+      #cell-170::before,
+      #cell-171::before,
+      #cell-174::before,
+      #cell-175::before,
+      #cell-176::before,
+      #cell-177::before,
+      #cell-178::before,
+      #cell-179::before,
+      #cell-180::before,
+      #cell-183::before,
+      #cell-184::before,
+      #cell-185::before,
+      #cell-186::before,
+      #cell-187::before,
+      #cell-189::before,
+      #cell-190::before,
+      #cell-191::before,
+      #cell-192::before,
+      #cell-193::before,
+      #cell-194::before,
+      #cell-195::before,
+      #cell-196::before,
+      #cell-197::before,
+      #cell-198::before,
+      #cell-199::before,
+      #cell-200::before,
+      #cell-201::before,
+      #cell-202::before,
+      #cell-204::before,
+      #cell-205::before,
+      #cell-206::before,
+      #cell-207::before,
+      #cell-208::before,
+      #cell-209::before,
+      #cell-210::before,
+      #cell-211::before,
+      #cell-212::before,
+      #cell-213::before,
+      #cell-214::before,
+      #cell-215::before,
+      #cell-216::before,
+      #cell-217::before,
+      #cell-219::before,
+      #cell-220::before,
+      #cell-221::before,
+      #cell-222::before,
+      #cell-223::before,
+      #cell-224::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-116 {
+        background: #261515;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-116::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      /* row 8 */
+
+      #cell-121 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-121::before {
+        content: '';
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-123 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-123::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-124 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-124::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-125 {
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+      #cell-125::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-126 {
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+      #cell-126::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #ff9930;
+      }
+
+      #cell-127 {
+        background: #ff9930;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-127::before {
+        content: '';
+        background: #ffd263;
+        box-shadow: var(--size) 0 #ffd263;
+      }
+
+      #cell-128 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-128::before {
+        content: '';
+        background: #ff9930;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+
+      #cell-131 {
+        background: #261515;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-131::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      /* row 9 */
+
+      #cell-135 {
+        background: #4b1111;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-135::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-139 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-139::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+
+      #cell-140 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+      #cell-140::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-141 {
+        background: #4b1111;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+      #cell-141::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-142 {
+        background: #d24d0e;
+        box-shadow: var(--size) 0 #d24d0e;
+      }
+      #cell-142::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #a62800;
+      }
+
+      #cell-146,
+      #cell-172 {
+        background: #261515;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+      #cell-146::before,
+      #cell-172::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-147,
+      #cell-181,
+      #cell-182 {
+        background: #4b1111;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+      #cell-147::before,
+      #cell-181::before,
+      #cell-182::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-148 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+      #cell-148::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-149 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+      #cell-149::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      /* row 10 */
+
+      #cell-150 {
+        background: #261515;
+        box-shadow: var(--size) 0 #801111;
+      }
+      #cell-150::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #801111;
+      }
+
+      #cell-151 {
+        background: #801111;
+        box-shadow: var(--size) 0 #a62800;
+      }
+      #cell-151::before {
+        content: '';
+        background: #801111;
+        box-shadow: var(--size) 0 #801111;
+      }
+
+      #cell-152 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #801111;
+      }
+      #cell-152::before {
+        content: '';
+        background: #801111;
+        box-shadow: var(--size) 0 #801111;
+      }
+
+      #cell-153 {
+        background: #801111;
+        box-shadow: var(--size) 0 #801111;
+      }
+      #cell-153::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-155,
+      #cell-168 {
+        background: #4b1111;
+        box-shadow: var(--size) 0 #261515;
+      }
+      #cell-155::before,
+      #cell-168::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      #cell-157 {
+        background: #261515;
+        box-shadow: var(--size) 0 #801111;
+      }
+      #cell-157::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+
+      #cell-158 {
+        background: #a62800;
+        box-shadow: var(--size) 0 #801111;
+      }
+      #cell-158::before {
+        content: '';
+        background: #801111;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+
+      /* row 11 */
+
+      #cell-165 {
+        background: #261515;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+      #cell-165::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+
+      #cell-166 {
+        background: #801111;
+        box-shadow: var(--size) 0 #801111;
+      }
+      #cell-166::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+
+      #cell-167 {
+        background: #801111;
+        box-shadow: var(--size) 0 #801111;
+      }
+      #cell-167::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+
+      #cell-173 {
+        background: #801111;
+        box-shadow: var(--size) 0 #4b1111;
+      }
+      #cell-173::before {
+        content: '';
+        background: #801111;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      /* row 12 */
+
+      #cell-188 {
+        background: #801111;
+        box-shadow: var(--size) 0 #261515;
+      }
+      #cell-188::before {
+        content: '';
+        background: #801111;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      /* row 13 */
+
+      #cell-203 {
+        background: #4b1111;
+        box-shadow: var(--size) 0 #261515;
+      }
+      #cell-203::before {
+        content: '';
+        background: #4b1111;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      /* row 14 */
+
+      #cell-218 {
+        background: #4b1111;
+        box-shadow: var(--size) 0 #261515;
+      }
+      #cell-218::before {
+        content: '';
+        background: #261515;
+        box-shadow: var(--size) 0 #261515;
+      }
+
+      @media screen and (min-width: 375px) and (min-height: 400px) {
+        :root {
+          --size: 10px;
+        }
+      }
+
+      @media screen and (min-width: 425px) and (min-height: 480px) {
+        :root {
+          --size: 12px;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (min-height: 768px) {
+        :root {
+          --size: 16px;
+        }
+
+        body {
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (min-width: 1024px) and (min-height: 768px) {
+        :root {
+          --size: 18px;
+        }
+      }
+
+      @media screen and (min-width: 2560px) and (min-height: 910px) {
+        :root {
+          --size: 22px;
+        }
+
+        body {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="grid">
+        <div id="cell-0" class="cell"></div>
+        <div id="cell-1" class="cell"></div>
+        <div id="cell-2" class="cell"></div>
+        <div id="cell-3" class="cell"></div>
+        <div id="cell-4" class="cell"></div>
+        <div id="cell-5" class="cell"></div>
+        <div id="cell-6" class="cell"></div>
+        <div id="cell-7" class="cell"></div>
+        <div id="cell-8" class="cell"></div>
+        <div id="cell-9" class="cell"></div>
+
+        <div id="cell-10" class="cell"></div>
+        <div id="cell-11" class="cell"></div>
+        <div id="cell-12" class="cell"></div>
+        <div id="cell-13" class="cell"></div>
+        <div id="cell-14" class="cell"></div>
+        <div id="cell-15" class="cell"></div>
+        <div id="cell-16" class="cell"></div>
+        <div id="cell-17" class="cell"></div>
+        <div id="cell-18" class="cell"></div>
+        <div id="cell-19" class="cell"></div>
+
+        <div id="cell-20" class="cell"></div>
+        <div id="cell-21" class="cell"></div>
+        <div id="cell-22" class="cell"></div>
+        <div id="cell-23" class="cell"></div>
+        <div id="cell-24" class="cell"></div>
+        <div id="cell-25" class="cell"></div>
+        <div id="cell-26" class="cell"></div>
+        <div id="cell-27" class="cell"></div>
+        <div id="cell-28" class="cell"></div>
+        <div id="cell-29" class="cell"></div>
+
+        <div id="cell-30" class="cell"></div>
+        <div id="cell-31" class="cell"></div>
+        <div id="cell-32" class="cell"></div>
+        <div id="cell-33" class="cell"></div>
+        <div id="cell-34" class="cell"></div>
+        <div id="cell-35" class="cell"></div>
+        <div id="cell-36" class="cell"></div>
+        <div id="cell-37" class="cell"></div>
+        <div id="cell-38" class="cell"></div>
+        <div id="cell-39" class="cell"></div>
+
+        <div id="cell-40" class="cell"></div>
+        <div id="cell-41" class="cell"></div>
+        <div id="cell-42" class="cell"></div>
+        <div id="cell-43" class="cell"></div>
+        <div id="cell-44" class="cell"></div>
+        <div id="cell-45" class="cell"></div>
+        <div id="cell-46" class="cell"></div>
+        <div id="cell-47" class="cell"></div>
+        <div id="cell-48" class="cell"></div>
+        <div id="cell-49" class="cell"></div>
+
+        <div id="cell-50" class="cell"></div>
+        <div id="cell-51" class="cell"></div>
+        <div id="cell-52" class="cell"></div>
+        <div id="cell-53" class="cell"></div>
+        <div id="cell-54" class="cell"></div>
+        <div id="cell-55" class="cell"></div>
+        <div id="cell-56" class="cell"></div>
+        <div id="cell-57" class="cell"></div>
+        <div id="cell-58" class="cell"></div>
+        <div id="cell-59" class="cell"></div>
+
+        <div id="cell-60" class="cell"></div>
+        <div id="cell-61" class="cell"></div>
+        <div id="cell-62" class="cell"></div>
+        <div id="cell-63" class="cell"></div>
+        <div id="cell-64" class="cell"></div>
+        <div id="cell-65" class="cell"></div>
+        <div id="cell-66" class="cell"></div>
+        <div id="cell-67" class="cell"></div>
+        <div id="cell-68" class="cell"></div>
+        <div id="cell-69" class="cell"></div>
+
+        <div id="cell-70" class="cell"></div>
+        <div id="cell-71" class="cell"></div>
+        <div id="cell-72" class="cell"></div>
+        <div id="cell-73" class="cell"></div>
+        <div id="cell-74" class="cell"></div>
+        <div id="cell-75" class="cell"></div>
+        <div id="cell-76" class="cell"></div>
+        <div id="cell-77" class="cell"></div>
+        <div id="cell-78" class="cell"></div>
+        <div id="cell-79" class="cell"></div>
+
+        <div id="cell-80" class="cell"></div>
+        <div id="cell-81" class="cell"></div>
+        <div id="cell-82" class="cell"></div>
+        <div id="cell-83" class="cell"></div>
+        <div id="cell-84" class="cell"></div>
+        <div id="cell-85" class="cell"></div>
+        <div id="cell-86" class="cell"></div>
+        <div id="cell-87" class="cell"></div>
+        <div id="cell-88" class="cell"></div>
+        <div id="cell-89" class="cell"></div>
+
+        <div id="cell-90" class="cell"></div>
+        <div id="cell-91" class="cell"></div>
+        <div id="cell-92" class="cell"></div>
+        <div id="cell-93" class="cell"></div>
+        <div id="cell-94" class="cell"></div>
+        <div id="cell-95" class="cell"></div>
+        <div id="cell-96" class="cell"></div>
+        <div id="cell-97" class="cell"></div>
+        <div id="cell-98" class="cell"></div>
+        <div id="cell-99" class="cell"></div>
+
+        <div id="cell-100" class="cell"></div>
+        <div id="cell-101" class="cell"></div>
+        <div id="cell-102" class="cell"></div>
+        <div id="cell-103" class="cell"></div>
+        <div id="cell-104" class="cell"></div>
+        <div id="cell-105" class="cell"></div>
+        <div id="cell-106" class="cell"></div>
+        <div id="cell-107" class="cell"></div>
+        <div id="cell-108" class="cell"></div>
+        <div id="cell-109" class="cell"></div>
+
+        <div id="cell-110" class="cell"></div>
+        <div id="cell-111" class="cell"></div>
+        <div id="cell-112" class="cell"></div>
+        <div id="cell-113" class="cell"></div>
+        <div id="cell-114" class="cell"></div>
+        <div id="cell-115" class="cell"></div>
+        <div id="cell-116" class="cell"></div>
+        <div id="cell-117" class="cell"></div>
+        <div id="cell-118" class="cell"></div>
+        <div id="cell-119" class="cell"></div>
+
+        <div id="cell-120" class="cell"></div>
+        <div id="cell-121" class="cell"></div>
+        <div id="cell-122" class="cell"></div>
+        <div id="cell-123" class="cell"></div>
+        <div id="cell-124" class="cell"></div>
+        <div id="cell-125" class="cell"></div>
+        <div id="cell-126" class="cell"></div>
+        <div id="cell-127" class="cell"></div>
+        <div id="cell-128" class="cell"></div>
+        <div id="cell-129" class="cell"></div>
+
+        <div id="cell-130" class="cell"></div>
+        <div id="cell-131" class="cell"></div>
+        <div id="cell-132" class="cell"></div>
+        <div id="cell-133" class="cell"></div>
+        <div id="cell-134" class="cell"></div>
+        <div id="cell-135" class="cell"></div>
+        <div id="cell-136" class="cell"></div>
+        <div id="cell-137" class="cell"></div>
+        <div id="cell-138" class="cell"></div>
+        <div id="cell-139" class="cell"></div>
+
+        <div id="cell-140" class="cell"></div>
+        <div id="cell-141" class="cell"></div>
+        <div id="cell-142" class="cell"></div>
+        <div id="cell-143" class="cell"></div>
+        <div id="cell-144" class="cell"></div>
+        <div id="cell-145" class="cell"></div>
+        <div id="cell-146" class="cell"></div>
+        <div id="cell-147" class="cell"></div>
+        <div id="cell-148" class="cell"></div>
+        <div id="cell-149" class="cell"></div>
+
+        <div id="cell-150" class="cell"></div>
+        <div id="cell-151" class="cell"></div>
+        <div id="cell-152" class="cell"></div>
+        <div id="cell-153" class="cell"></div>
+        <div id="cell-154" class="cell"></div>
+        <div id="cell-155" class="cell"></div>
+        <div id="cell-156" class="cell"></div>
+        <div id="cell-157" class="cell"></div>
+        <div id="cell-158" class="cell"></div>
+        <div id="cell-159" class="cell"></div>
+
+        <div id="cell-160" class="cell"></div>
+        <div id="cell-161" class="cell"></div>
+        <div id="cell-162" class="cell"></div>
+        <div id="cell-163" class="cell"></div>
+        <div id="cell-164" class="cell"></div>
+        <div id="cell-165" class="cell"></div>
+        <div id="cell-166" class="cell"></div>
+        <div id="cell-167" class="cell"></div>
+        <div id="cell-168" class="cell"></div>
+        <div id="cell-169" class="cell"></div>
+
+        <div id="cell-170" class="cell"></div>
+        <div id="cell-171" class="cell"></div>
+        <div id="cell-172" class="cell"></div>
+        <div id="cell-173" class="cell"></div>
+        <div id="cell-174" class="cell"></div>
+        <div id="cell-175" class="cell"></div>
+        <div id="cell-176" class="cell"></div>
+        <div id="cell-177" class="cell"></div>
+        <div id="cell-178" class="cell"></div>
+        <div id="cell-179" class="cell"></div>
+
+        <div id="cell-180" class="cell"></div>
+        <div id="cell-181" class="cell"></div>
+        <div id="cell-182" class="cell"></div>
+        <div id="cell-183" class="cell"></div>
+        <div id="cell-184" class="cell"></div>
+        <div id="cell-185" class="cell"></div>
+        <div id="cell-186" class="cell"></div>
+        <div id="cell-187" class="cell"></div>
+        <div id="cell-188" class="cell"></div>
+        <div id="cell-189" class="cell"></div>
+
+        <div id="cell-190" class="cell"></div>
+        <div id="cell-191" class="cell"></div>
+        <div id="cell-192" class="cell"></div>
+        <div id="cell-193" class="cell"></div>
+        <div id="cell-194" class="cell"></div>
+        <div id="cell-195" class="cell"></div>
+        <div id="cell-196" class="cell"></div>
+        <div id="cell-197" class="cell"></div>
+        <div id="cell-198" class="cell"></div>
+        <div id="cell-199" class="cell"></div>
+
+        <div id="cell-200" class="cell"></div>
+        <div id="cell-201" class="cell"></div>
+        <div id="cell-202" class="cell"></div>
+        <div id="cell-203" class="cell"></div>
+        <div id="cell-204" class="cell"></div>
+        <div id="cell-205" class="cell"></div>
+        <div id="cell-206" class="cell"></div>
+        <div id="cell-207" class="cell"></div>
+        <div id="cell-208" class="cell"></div>
+        <div id="cell-209" class="cell"></div>
+
+        <div id="cell-210" class="cell"></div>
+        <div id="cell-211" class="cell"></div>
+        <div id="cell-212" class="cell"></div>
+        <div id="cell-213" class="cell"></div>
+        <div id="cell-214" class="cell"></div>
+        <div id="cell-215" class="cell"></div>
+        <div id="cell-216" class="cell"></div>
+        <div id="cell-217" class="cell"></div>
+        <div id="cell-218" class="cell"></div>
+        <div id="cell-219" class="cell"></div>
+
+        <div id="cell-220" class="cell"></div>
+        <div id="cell-221" class="cell"></div>
+        <div id="cell-222" class="cell"></div>
+        <div id="cell-223" class="cell"></div>
+        <div id="cell-224" class="cell"></div>
+      </div>
+
+      <ul class="list">
+        <li class="list-item">
+          original by
+          <a href="https://dotpict.net/users/3003" class="link">ABs</a>
+        </li>
+        <li class="list-item">
+          2025; created by
+          <a href="https://teplostan.ski" class="link">teplostanski</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
