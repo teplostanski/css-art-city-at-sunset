@@ -1,6 +1,6 @@
 # City At Sunset
 
-Pixel Art On Pure CSS • 30x30 • September 2025
+Pixel Art On Pure CSS • Grid & Shadows • 30x30 • September 2025
 
 <a href="https://city-at-sunset.css-art.teplostan.ski/">View</a>
 
