@@ -20,6 +20,6 @@ Pixel Art On Pure CSS • Grid & Shadows • 30x30 • September 2025
 
 <div>
   <a href="https://donate.teplostan.ski" target="_blank">
-    <img src="https://src.teplostan.ski/support-me.svg" alt="Support Me 🖤">
+    <img src="https://src.teplostan.ski/support-me.svg" alt="Support Me 🖤" />
   </a>
 </div>
