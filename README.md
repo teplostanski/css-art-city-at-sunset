@@ -2,7 +2,7 @@
 
 Pixel Art On Pure CSS • Grid & Shadows • 30x30 • September 2025
 
-<a href="https://city-at-sunset.teplostan.ski/">View</a>
+<a href="https://city-at-sunset.teplostanski.me/">View</a>
 
 <a href="https://codepen.io/teplostanski/pen/NPGJGjW">CodePen</a>
 
